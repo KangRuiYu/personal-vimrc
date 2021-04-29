@@ -10,7 +10,7 @@ Plug 'mhinz/vim-startify'
 
 " Visual
 Plug 'joshdick/onedark.vim'
-Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
@@ -23,7 +23,7 @@ call plug#end()
 
 
 " LIGHTLINE SETTINGS
-let g:lightline = {'colorscheme' : 'dracula'}
+let g:lightline = {'colorscheme' : 'palenight'}
 set laststatus=2 
 
 
@@ -51,7 +51,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 
 " VISUAL SETTINGS
 syntax on
-colorscheme dracula
+set background=dark
+colorscheme palenight
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
