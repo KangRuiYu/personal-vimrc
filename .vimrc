@@ -74,5 +74,7 @@ set nowrap " Disable word wrap
 set nuw=6 " Increase line number width
 
 
-" WINDOWS TERMINAL SETTINGS
-set t_ut=""
+" WINDOWS SPECIFIC SETTINGS
+if has("win32")
+    set t_ut=""
+endif
