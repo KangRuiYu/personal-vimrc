@@ -45,7 +45,8 @@ set splitbelow " Sets new splits to occur below
 filetype plugin on " Run autocommands for plugins when a filetype is recognized
 
 
-" NERDTREE SETTINGS
+" MAPPINGS
+nnoremap <leader>b :ls<cr>:b<space>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
 
