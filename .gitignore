@@ -4,3 +4,4 @@
 # Whitelist
 !.gitignore
 !.vimrc
+!.gvimrc
