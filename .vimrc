@@ -9,11 +9,10 @@ Plug 'vimwiki/vimwiki'
 Plug 'mhinz/vim-startify'
 
 " Visual
-Plug 'joshdick/onedark.vim'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'arcticicestudio/nord-vim'
+Plug 'tomasiser/vim-code-dark'
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/goyo.vim'
 
 " Nice to haves
 Plug 'raimondi/delimitmate'
@@ -23,7 +22,7 @@ call plug#end()
 
 
 " LIGHTLINE SETTINGS
-let g:lightline = {'colorscheme' : 'palenight'}
+let g:lightline = {'colorscheme' : 'codedark'}
 set laststatus=2 
 
 
@@ -48,12 +47,18 @@ filetype plugin on " Run autocommands for plugins when a filetype is recognized
 " MAPPINGS
 nnoremap <leader>b :ls<cr>:b<space>
 nnoremap <C-t> :NERDTreeToggle<CR>
+" Turn on zen mode
+nnoremap <leader>z :Goyo<cr>
+" Open vimrc
+nnoremap <leader>v :e ~/.vimrc<cr>
+" Reload vimrc
+nnoremap <leader>r :source ~/.vimrc<cr>
 
 
 " VISUAL SETTINGS
 syntax on
 set background=dark
-colorscheme palenight
+colorscheme codedark
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
